@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Tracker</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'images/logo.webp' %}" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#log-period">Log Period</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#notifications">Notifications</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!--- Home -->
+    <div id="home">
+        <div class="welcome">
+            <h1>Welcome to your period tracker</h1>
+            <p>Track your menstrual cycle, stay on top of your health, and get personalized insights.</p>
+        </div>
+
+        <div class="content">
+            <div class="calender-section">
+                <h2>Your Monthly Calendar</h2>
+                <input id="calendar-input" type="text" placeholder="Select a date range">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="{% static 'js/script.js' %}"></script> 
+</body>
+</html>

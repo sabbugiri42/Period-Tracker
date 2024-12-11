@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c36;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    margin: 0px;
+    padding: 0;
+
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f5f5f5;
+}
+
+.nav-links a.active {
+    background-color: #9b59b6; 
+    color: white;
+}
+
+#home {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* height: 23vh; */
+    
+}
+
+#home .welcome {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+}
+
+.calender-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+#calendar-input {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 290px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.flatpickr-calender {
+    width: 290px;
+    max-width: 290px;
+}
